@@ -1,97 +1,36 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8' />
-    <meta name="description" content="Hanmeng Voice : " />
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
     <title>Hanmeng Voice</title>
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-
-          <h1 id="project_title">Hanmeng Voice</h1>
-
-        </header>
+    <script>
+    var playList = [
+      {title: '哪里都是你', audioSrc:'http://hanmengvoice.b0.upaiyun.com/music1.mp3'},
+      {title: '不上班', audioSrc:'http://hanmengvoice.b0.upaiyun.com/music2.mp3'},
+      {title: '不上班2', audioSrc:'http://hanmengvoice.b0.upaiyun.com/music3.mp3'},
+      {title: '舒克和贝塔', audioSrc:'http://hanmengvoice.b0.upaiyun.com/music4.mp3'},
+      {title: '姐妹花', audioSrc:'http://hanmengvoice.b0.upaiyun.com/music5.mp3'},
+      {title: '阿里巴巴', audioSrc:'http://hanmengvoice.b0.upaiyun.com/music6.mp3'},
+      {title: '海尔兄弟', audioSrc:'http://hanmengvoice.b0.upaiyun.com/music7.mp3'},
+      {title: '邋遢大王', audioSrc:'http://hanmengvoice.b0.upaiyun.com/music8.mp3'}
+    ];
+    </script>
+    <div class="splash">
+      <h1>Hanmeng Voice</h1>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <div class="item">
-          <h3>哪里都是你</h3>
-          <p>
-            <audio src="http://hanmengvoice.b0.upaiyun.com/music1.mp3" controls preload>您的浏览器不支持 audio 标签。</audio>
-          </p>
-        </div>
-        <div class="item">
-          <h3>不上班</h3>
-          <p>
-            <audio src="http://hanmengvoice.b0.upaiyun.com/music2.mp3" controls>您的浏览器不支持 audio 标签。</audio>
-          </p>
-        </div>
-        <div class="item">
-          <h3>不上班2</h3>
-          <p>
-            <audio src="http://hanmengvoice.b0.upaiyun.com/music3.mp3" controls>您的浏览器不支持 audio 标签。</audio>
-          </p>
-        </div>
-        <div class="item">
-          <h3>姐妹花</h3>
-          <p>
-            <audio src="http://hanmengvoice.b0.upaiyun.com/music6.mp3" controls>您的浏览器不支持 audio 标签。</audio>
-          </p>
-        </div>
-        <div class="item">
-          <h3>舒克和贝塔</h3>
-          <p>
-            <audio src="http://hanmengvoice.b0.upaiyun.com/music4.mp3" controls>您的浏览器不支持 audio 标签。</audio>
-          </p>
-        </div>
-        <div class="item">
-          <h3>阿里巴巴</h3>
-          <p>
-            <audio src="http://hanmengvoice.b0.upaiyun.com/music5.mp3" controls>您的浏览器不支持 audio 标签。</audio>
-          </p>
-        </div>
-        <div class="item">
-          <h3>姐妹花</h3>
-          <p>
-            <audio src="http://hanmengvoice.b0.upaiyun.com/music6.mp3" controls>您的浏览器不支持 audio 标签。</audio>
-          </p>
-        </div>
-        <div class="item">
-          <h3>海尔兄弟</h3>
-          <p>
-            <audio src="http://hanmengvoice.b0.upaiyun.com/music7.mp3" controls>您的浏览器不支持 audio 标签。</audio>
-          </p>
-        </div>
-        <div class="item">
-          <h3>邋遢大王</h3>
-          <p>
-            <audio src="http://hanmengvoice.b0.upaiyun.com/music8.mp3" controls>您的浏览器不支持 audio 标签。</audio>
-          </p>
-        </div>
-      </section>
+    <div class="player">
+      <div class="player-image"></div>
+      <div class="player-frame"></div>
+      <a href="javascript:;" class="play-icon"><i>AAA</i></a>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>&copy; 2014 &nbsp;&nbsp;&nbsp;Hanmeng</p>
-      </footer>
+    <div class="songname"></div>
+    <div class="footer">
+      &copy; 2014 Hanmeng
     </div>
-
-    
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F71c5f8f97c7a6999f0269e83a2bf5109' type='text/javascript'%3E%3C/script%3E"));
-</script>
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/main.js"></script>
   </body>
 </html>
