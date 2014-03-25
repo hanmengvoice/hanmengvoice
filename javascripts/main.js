@@ -31,15 +31,15 @@ $(function(){
     play(playList[i]);
   }
   function play(obj){
+    console.log(obj);
     nameDOM.html(obj.title);
-    playerDOM.css('background-image', obj.imgURL || 'images/300.jpg');
+    playImageDOM.css('background-image', 'url(' + (obj.imgURL || 'images/300.jpg') + ')');
     audio.pause();
     audio.src = obj.audioSrc;
     audio.play();
   }
 
   playIcon.on('click', function(){
-    console.log('a');
     if(playIcon.hasClass('pause')){
       playIcon.removeClass('pause');
       audio.play();
